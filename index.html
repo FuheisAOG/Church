@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/bc78899125.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="myCSS.css" /><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuheis AOG Church</title>
+</head>
+<body style="background-color:white;margin-top: 0px;">
+        <header>
+            <a><img class="logo" src="AG_Church_Logo.png" alt="AG Church"><div class="circle"></div></a>
+            <h1>Assemblies of God Church in Fuheis</h1>
+            <div class="ArabicNamepage">كنيسة الفحيص الخمسينيّة الإنجيليّة</div>
+            <div class="luke">لوقا 4: 18 - 19: رُوحُ الرَّبِّ عَلَيَّ، لأَنَّهُ مَسَحَنِي لأُبَشِّرَ الْمَسَاكِينَ، أَرْسَلَنِي لأَشْفِيَ الْمُنْكَسِرِي الْقُلُوبِ، لأُنَادِيَ لِلْمَأْسُورِينَ بِالإِطْلاَقِ ولِلْعُمْيِ بِالْبَصَرِ، وَأُرْسِلَ الْمُنْسَحِقِينَ فِي الْحُرِّيَّةِ، وَأَكْرِزَ بِسَنَةِ الرَّبِّ الْمَقْبُولَةِ</div>
+            <button class="scroll" onclick="window.scroll({top: 833, behavior: 'smooth'});">الوعظات</button>
+        </header>
+    <section class="firstBack"></section>
+    <section class="secondBack"></section>
+    <audio src="Instrumental Music.mp3" autoplay="true" loop></audio>
+<div class="cross-light">
+    <div class="cross">
+        <div class="cross-length">
+            <div class="cross-width"></div>
+        </div>
+    </div>
+</div>
+    <div class="container">
+        <div class="card" style="--i:-1">
+            <div class="content" style="--j:1">
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qq-Dcs5G40U" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h2>الإجتماع قبل أسبوعين</h2>
+            </div>
+         </div>
+         <div class="card" style="--i:0">
+            <div class="content" style="--j:2">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/GolXD6yqtiE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h2>آخر اجتماع</h2>
+            </div>
+         </div>
+         <div class="card" style="--i:1">
+            <div class="content" style="--j:3">
+                <div >
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Nh1PZXmewIU" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h2>الإجتماع قبل ثلاثة أسابيع</h2>
+            </div>
+         </div>
+    </div>
+    <nav class="ContactUs">
+        <section class="socialSection"">
+            <ul class="socialMedia">
+                <li><a href="https://www.youtube.com/user/fuhaisaog" target="_blank"><i id="youtube" class="fa-brands fa-youtube"></i></a></li>
+                <li><a  href="https://web.facebook.com/fuhaisaog/?_rdc=1&_rdr" target="_blank"><i id="facebook" class="fa-brands fa-facebook-f"></i></a></li>
+            </ul>
+        </section>
+        <div class="phoneNumber">للتواصل معنا على رقم: 0799463010</div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).on('scroll', function(){
+                if ($(window).scrollTop()){
+                    $("header").addClass('sticky');
+                } else{
+                    $("header").removeClass('sticky');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
