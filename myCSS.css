@@ -12,7 +12,7 @@ header{
     left:0;
     height:100vh;
     width:100%;
-    transition: 300ms;
+    transition: 2s;
 }
 header h1 {
     transform:translateY(40px);
@@ -107,6 +107,7 @@ header .a{
     background:rgba(32, 13, 13, 0.8);
 }
 .sticky{
+    transition: 2s;
     z-index:2;
     top: 0;
     height:10vh;
@@ -373,7 +374,54 @@ iframe{
     }
 }
 @media (max-height:610px){
-    .secondBack{
-        background-position: right -220px top 0;
+    .sticky{
+        display:none;
+    }
+    .ContactUs{
+        display: none;
+    }
+    .container{
+        bottom:-67%;
+    }
+    .container .card{
+        width: 150px;
+        height: 175px;
+    }
+    .container .card .content{
+        font-size:2vw;
+    }
+    iframe{
+        transform: translateY(-7%);
+        width:120px;
+        height:70px;
+    }
+    .circle{
+        display: none;
+        transform: translate(280%, 30px);
+        width:80px;
+        height:80px;
+    }
+    .logo{
+        width:65px;
+        transform: translate(405%, 24px);
+    }
+    header h1 , header .ArabicNamepage{
+        transform: translate(0, -40px);
+        font-size: x-large;
+        color:black;
+    }
+    .cross{
+        display: none;
+    }
+    .luke{
+        font-size:2vw;
+        color:black;
+        transform: translate(-50%,-25px);
+    }
+    .scroll{
+        transform: translate(-50%,-14px);
+        height:25px;
+        width: 60px;
+        font-size: 14px;       
     }
 }
