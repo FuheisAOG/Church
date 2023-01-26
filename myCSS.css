@@ -16,13 +16,13 @@ header{
 }
 header h1 {
     transform:translateY(40px);
-    color: ghostwhite;
+    color: black;
     font-size: 4.5vw;
     font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 header .ArabicNamepage {
     transform: translateY(40px);
-    color: ghostwhite;
+    color: black;
     font-size: 4.5vw;
     font-weight: bold;
 }
@@ -34,6 +34,8 @@ header .a{
     transition: 1s;
 }
 .logo {
+    transition: 1s;
+    transform: translateY(20px);
     justify-content: center;
     align-items: center;
     width:200px;
@@ -58,6 +60,7 @@ header .a{
                     0 0 90px rgba(255, 255, 255, 0.644);
     backdrop-filter:blur(7px);
     opacity:0.8;
+    display: none;
 }
 .luke{
     position:relative;
@@ -72,7 +75,7 @@ header .a{
     justify-content: center;
     width:80%;
     padding:7px;
-    color:ghostwhite;
+    color:black;
     border:0.5px solid rgba(255, 255, 255, 0.2);
     background:rgba(255, 255, 255, 0.1);
     box-shadow: 25px 25px 100px rgba(0,0,0,0.2);
@@ -161,65 +164,6 @@ header .a{
     background:url("churchBackground.jpeg");
     background-size: cover;
     background-position: center;
-}
-.cross{
-    position:fixed;
-    right:4%;
-    top:20%;
-    -webkit-animation: rotating 3s linear infinite;
-    -moz-animation: rotating 3s linear infinite;
-    -ms-animation: rotating 3s linear infinite;
-    -o-animation: rotating 3s linear infinite;
-    animation: rotating 3s linear infinite;
-    filter: opacity(0.4);
-}
-@-webkit-keyframes rotating /* Safari and Chrome */ {
-    from {
-      -webkit-transform: rotateY(0deg);
-      -o-transform: rotateY(0deg);
-      transform: rotateY(0deg);
-    }
-    to {
-      -webkit-transform: rotateY(360deg);
-      -o-transform: rotateY(360deg);
-      transform: rotateY(360deg);
-    }
-  }
-@keyframes rotating {
-  from {
-    -ms-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -webkit-transform: rotateY(0deg);
-    -o-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-  }
-  to {
-    -ms-transform: rotateY(360deg);
-    -moz-transform: rotateY(360deg);
-    -webkit-transform: rotateY(360deg);
-    -o-transform: rotateY(360deg);
-    transform: rotateY(360deg);
-  }
-}
-.cross-length{
-    border-radius: 3px;
-    backdrop-filter: blur(100px);
-    background-color: rgb(255, 217, 0);
-    box-sizing: border-box;
-    height:40px;
-    width:6px;
-}
-.cross-width{
-    position:absolute;
-    top:-23px;
-    left:29px;
-    border-radius: 3px;
-    backdrop-filter: blur(100px);
-    background-color: rgb(255, 217, 0);
-    box-sizing: border-box;
-    transform:translate(-40px,34px);
-    height:4px;
-    width:27px;
 }
 .container{
     position: absolute;
@@ -355,13 +299,14 @@ iframe{
         height:195vh;
     }
     .container{
-        bottom:-152%;
+        bottom:-100%;
+        transform: translate(-50%,50%);
     }
     .sticky h1, .sticky .ArabicNamepage{
-        font-size:2vh;
+        font-size:4vw;
     }
     .sticky img{
-        width:2.2rem;
+        width:10vw;
         height:auto;
     }
     .ContactUs{
@@ -373,6 +318,14 @@ iframe{
         bottom:-100%;
     }
 }
+@media (min-width:856px){
+    header h1, header .ArabicNamepage{
+        font-size:3vw;
+    }
+    .luke{
+        font-size:2vw;
+    }
+}
 @media (max-height:610px){
     .sticky{
         display:none;
@@ -381,7 +334,8 @@ iframe{
         display: none;
     }
     .container{
-        bottom:-67%;
+        bottom:-50%;
+        transform: translate(-50%, 50%);
     }
     .container .card{
         width: 150px;
@@ -408,14 +362,9 @@ iframe{
     header h1 , header .ArabicNamepage{
         transform: translate(0, -40px);
         font-size: x-large;
-        color:black;
-    }
-    .cross{
-        display: none;
     }
     .luke{
         font-size:2vw;
-        color:black;
         transform: translate(-50%,-25px);
     }
     .scroll{
