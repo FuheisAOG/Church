@@ -17,6 +17,13 @@
     <title>Fuheis AOG Church</title>
 </head>
 <body style="background-color:white;margin-top: 0px;">
+        <div id="toggle"></div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="https://www.youtube.com/user/fuhaisaog" target="_blank"><i id="youtube" class="fa-brands fa-youtube"></i></a></li>
+                <li><a  href="https://web.facebook.com/fuhaisaog/?_rdc=1&_rdr" target="_blank"><i id="facebook" class="fa-brands fa-facebook-f"></i></a></li>
+            </ul>
+        </div>
         <header>
             <a><img class="logo" src="AG_Church_Logo.png" alt="AG Church"><div class="circle"></div></a>
             <h1>Assemblies of God Church in Fuheis</h1>
@@ -73,6 +80,20 @@
                 }
             });
         });
+    </script>
+    <script>
+        const toggle = document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar');
+        document.onclick = function(e){
+            if(e.target.id !== 'sidebar' && e.target.id !== 'toggle'){
+                toggle.classList.remove('active');
+                sidebar.classList.remove('active');
+            }
+        };
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        };
     </script>
 </body>
 </html>
