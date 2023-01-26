@@ -66,7 +66,7 @@ header .a{
     transform: translate(-50%,50px);
     flex-wrap: wrap;
     word-wrap: break-word;
-    font-size:x-large;
+    font-size:2.7vh;
     font-weight:bolder;
     text-align: center;
     justify-content: center;
@@ -225,7 +225,7 @@ header .a{
     bottom:-75%;
     left:50%;
     width:100%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 25%);
     display: flex;
     flex-wrap:wrap;
     flex-direction: row;
@@ -350,23 +350,30 @@ iframe{
 }
 @media (max-width: 576px){
     .secondBack{
-        background-position: right -110px top 0;
-        height:150vh;
+        background-position: right -150px top 0;
+        height:195vh;
     }
     .container{
-        bottom:-148%;
+        bottom:-152%;
+    }
+    .sticky h1, .sticky .ArabicNamepage{
+        font-size:2vh;
+    }
+    .sticky img{
+        width:2.2rem;
+        height:auto;
     }
     .ContactUs{
-        position:absolute;
-        background: transparent;
+        display: none;
     }
 }
-@media (min-width:577px) and (max-width:856px){
+@media screen and (min-width:577px) and (max-width:856px) {
     .container{
         bottom:-100%;
     }
-    .ContactUs{
-        position:absolute;
-        background: transparent;
+}
+@media (max-height:610px){
+    .secondBack{
+        background-position: right -220px top 0;
     }
 }
