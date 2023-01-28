@@ -493,8 +493,8 @@ iframe{
         position: fixed;
         top:12vw;
         right:-30%;
-        width:20vh;
-        height:22vh;
+        width:8vw;
+        height:13vw;
         background: rgba(0, 0, 0, 0.2);
         transition: 1s;
         z-index: 1;
@@ -517,7 +517,7 @@ iframe{
     }
     #sidebar ul li{
         list-style: none;
-        font-size: 3vw;
+        font-size: 5.3vw;
         justify-content: center;
         align-items: center;
     }
