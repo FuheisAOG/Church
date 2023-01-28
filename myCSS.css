@@ -48,7 +48,6 @@ header .a{
     height:auto;
     z-index:1;
 }
-
 .luke{
     position:relative;
     display: flex;
@@ -101,14 +100,14 @@ header .a{
     transition: 2s;
     z-index:2;
     top: 0;
-    height:12vw !important;
+    height:5.6vw;
     background:rgba(0, 0, 0, 0.678);
     border-bottom:0.5px solid rgba(255, 255, 255, 0.2);
 }
 .sticky h1, .sticky .ArabicNamepage{
     transition: 1s;
     transform:translateY(0);
-    font-size: 4vh !important;
+    font-size: 4.5vh;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(187, 255, 0, 0.925) 20%);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -293,10 +292,10 @@ iframe{
         transform: translate(-50%,50%);
     }
     .sticky{
-        height:9vh;
+        height:12vw;
     }
     .sticky h1, .sticky .ArabicNamepage{
-        font-size:4vw;
+        font-size:4.3vw;
     }
     .sticky img{
         width:10vw;
